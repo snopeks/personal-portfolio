@@ -1,1 +1,83 @@
 /* custom styles */
+header {
+  background-color: #4B0082;
+  border-color: black;
+  text-transform: uppercase;
+}
+nav {
+ display: block;
+ text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+a:hover {
+  color: orange;
+}
+p {
+  color: white;
+  font-size: 20px;
+  align: center;
+}
+section #contact {
+
+}
+section {
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  background: black;
+  /*padding: 30px;*/
+  margin: 10px 0;
+  width: 100%;
+
+}
+img {
+  object-fit: cover;
+  align-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: inline;
+
+}
+
+h1 {
+  padding: 10px;
+  color: white;
+  margin: 0;
+}
+body {
+  background-color: grey;
+}
+footer{
+  background-color: black;
+  margin: 0;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+p#author{
+  color: white;
+  float: right;
+  /*margin: 20px;*/
+}
+p#copyright{
+  color: white;
+  float: left;
+  /*margin: 20px;*/
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
