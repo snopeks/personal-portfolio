@@ -1,6 +1,7 @@
 # snopeks.github.io
 
 ## This is my personal website repo.
-I'll be using this as a place for practicing and improving my development skills.
+
+My website is still under development!  
 
 You can reach my site at [snopeks.github.io.](snopeks.github.io)
