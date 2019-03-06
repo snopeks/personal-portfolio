@@ -12,13 +12,13 @@
   <!-- styles -->
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" src="assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
 </head>
 <body>
-  <nav class="brown lighten-1" role="navigation">
+  <nav role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Stephanie Snopek</a>
       <ul class="right hide-on-med-and-down">
@@ -35,85 +35,94 @@
     </div>
   </nav>
   <div id="page-wrapper">
-
-    <div class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <h1 class="header center white-text text-lighten-5 light">I am ready to build your next project.</h1>
-          <div class="row center">
-            <h5 class="header col s12 orange-text text-lighten-1">Based in San Francisco, CA </h5>
+    <div>
+      <div class="section intro-section">
+          <img id="sf-background" src="assets/imgs/downtownsf.jpeg" alt="Unsplashed background img 1">
+          <div id="intro-overlay">
+            <h1>Hello there!</h1>
+            <div class="row">
+              <h5 class="header col s12">I'm a Web Developer based in the Pacific Northwest</h5>
+            </div>
+            <div class="row">
+              <a href="#contact" class="btn-large waves-effect waves-light amber lighten-1">Get in touch</a>
+            </div>
           </div>
-          <div class="row center">
-            <a href="#contact" class="btn-large waves-effect waves-light amber lighten-1">Contact Me</a>
-          </div>
-          <br><br>
+            <br><br>
         </div>
-      </div>
-      <div class="parallax"><img src="assets/imgs/downtownsf.jpeg" alt="Unsplashed background img 1"></div>
     </div>
 
   <div class="container">
-    <div class="section">
+    <div class="section" id="about">
+      <h3>Professional Summary</h3>
       <div class="row">
         <div class="col s12 m4">
-          <div id="about" class="icon-block">
-            <h4>Strong Communicator</h4>
-            <p>Experienced in leading teams, addressing and resolving conflict, collaborating with clients, adapting to managerial feedback and being flexible with the needs of others. Non-violent communication is in my toolbelt.</p>
+          <p class="header">Developer Experience</p>
+          <div class="icon-block">
+            <ul class="list-creds">
+              <li>Two years of tech support at npm, inc. Commandline all day every day.</li>
+              <li>One Web Development bootcamp at General Assembly SF.</li>
+              <li>Six months experience at Seasoned doing React and java microservice development</li>
+            </ul>
           </div>
         </div>
         <div class="col s12 m4">
+          <p class="header">Collaborative & Adaptable</p>
           <div class="icon-block">
-            <h4>Jr Full Stack Developer</h4>
-            <p>Recently graduated from Web Development Immersive program at General Assembly, with an additional two years of Technical Support experience at npm, Inc. Give me a project and I'll deliver great results.</p>
+            <ul class="list-creds">
+              <li>Great at conflict resolution. </li>
+              <li>Always reading (& writing) documentation.</li>
+              <li>Adaptable to changing startup objectives & team needs.</li>
+              <li>Skilled in working with remote coworkers to debug issues & complete tickets.</li>
+            </ul>
           </div>
         </div>
         <div class="col s12 m4">
+          <p class="header">Tools for Success</p>
           <div class="icon-block">
-            <h4>Awesome Team Player</h4>
-            <p>Skilled at managing projects with Trello, reviewing code, pair programming, working with git/Github and coordinating interdisciplinary teamwork. I love the thrill of working and learning on a diverse team!</p>
+            <ul class="list-creds">
+              <li>Agile development. Responsive-first design.</li>
+              <li>Project management with Trello, Asana, Jira, or whatever you use.</li>
+              <li>Testing with TravisCI.</li>
+              <li>Code reviews, pair programming, regular feedback loops with managers to constantly improve.</li>
+              <li>git/Github is life!</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
       <div class="section">
-        <h4 id="my-work">My Work</h4>
+        <p class="header" id="my-work">Projects</p>
         <div class="row">
-
-          <div class="col s4"><a href="#">project 1</a></div>
           <div class="col s4"><a href="#">Habit Hero</a></div>
           <div class="col s4"><a href="https://learn-punjabi.herokuapp.com/">Learn Punjabi</a></div>
         </div>
       </div>
-      <div class="section">
-        <h4 id="contact">Contact</h4>
+      <div id="contact" class="section">
+        <h4>Excited to create something great? Me too! <br>Let's work together.</h4>
+        <p class="header" >Contact me</p>
         <div class="row">
           <div class="col s6"><a href="https://www.linkedin.com/in/snopeks/"> LinkedIn</a></div>
           <div class="col s6"><a href="https://github.com/snopeks">Github</a></div>
         </div>
       </div>
     </div>
-      <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <div class="row center">
-              <h5 class="col s12 orange-text text-lighten-5">Excited to create something great? Me too! Let's work together.</h5>
-            </div>
-          </div>
+    <div class="section">
+        <div class="row">
         </div>
-        <div class="parallax"><img src="assets/imgs/goldengatepark.jpeg" alt="Unsplashed background img 3"></div>
-      </div>
+    </div>
   </div>
-<footer class="page-footer brown darken-1">
+<footer class="page-footer grey darken-1">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Stephanie Snopek</h5>
-        <p class="grey-text text-lighten-4">Let's connect!</p>
-        <p class="grey-text text-lighten-3"> email: creativesnopeks at gmail dot com</p>
+        <h5 class="white-text">Get in touch</h5>
+        <ul>
+          <li>Let's connect!</li>
+          <li>email: creativesnopeks at gmail dot com</li>
+        </ul>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Contact</h5>
+        <h5 class="white-text">Social profiles</h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="https://github.com/snopeks">Github</a></li>
           <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/snopeks/">LinkedIn</a></li>
@@ -123,7 +132,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2014 Copyright Text
+    © 2019 Stephanie Snopek
     </div>
   </div>
   </footer>
