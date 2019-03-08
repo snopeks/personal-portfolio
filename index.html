@@ -16,20 +16,24 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+  <!-- scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/init.js"></script>
 </head>
 <body>
   <nav role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Stephanie Snopek</a>
+      <a id="logo-container" href="#" class="logo">Stephanie Snopek</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
+        <li><a href="#my-work">Side Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#my-work">My Work</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#about">About</a></li>
+        <li><a href="#my-work">Side Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#my-work">My Work</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -37,15 +41,11 @@
   <div id="page-wrapper">
     <div>
       <div class="section intro-section">
-          <img id="sf-background" src="assets/imgs/downtownsf.jpeg" alt="Unsplashed background img 1">
+          <div id="sf-background"></div>
           <div id="intro-overlay">
             <h1>Hello there!</h1>
-            <div class="row">
-              <h5 class="header col s12">I'm a Web Developer based in the Pacific Northwest</h5>
-            </div>
-            <div class="row">
-              <a href="#contact" class="btn-large waves-effect waves-light amber lighten-1">Get in touch</a>
-            </div>
+            <h5 class="header col s12">I'm a Web Developer based in the Pacific Northwest</h5>
+            <a href="#contact" class="btn-large waves-effect waves-light amber lighten-1">Get in touch</a>
           </div>
             <br><br>
         </div>
@@ -53,26 +53,37 @@
 
   <div class="container">
     <div class="section" id="about">
+      <h3>About Me</h3>
+      <div class="row">
+        <div class="col s12 m8">
+          <p>Hi, I'm Stephanie! I'm from BC, Canada and feel happiest when I'm surrounded by mountains. After graduating from the University of British Columbia I moved to San Francisco with my partner and got into the tech scene, where I worked at a few different startups doing technical support and learned a ton about different career trajectories in technology. I soon realized web development was a natural fit for me and never looked back. When not working on a project or outside enjoying nature, I tend to be traveling and learning about different cultures around the world. Oh, and I also love sci-fi TV, home improvement projects, cooking vegetarian food, playing with my pets and going for bubble tea with my friends!</p>
+        </div>
+        <div class="col s12 m4">
+          <img id="profile-pic" src="assets/imgs/profilepic.jpg" alt="my profile pic">
+        </div>
+      </div>
+    </div>
+    <div class="section">
       <h3>Professional Summary</h3>
       <div class="row">
         <div class="col s12 m4">
           <p class="header">Developer Experience</p>
           <div class="icon-block">
             <ul class="list-creds">
-              <li>Two years of tech support at npm, inc. Commandline all day every day.</li>
-              <li>One Web Development bootcamp at General Assembly SF.</li>
-              <li>Six months experience at Seasoned doing React and java microservice development</li>
+              <li>Two years of tech support at npm, inc. npm installing and debugging all day every day!</li>
+              <li>One Web Development Immersive bootcamp at General Assembly SF.</li>
+              <li>Six months experience at Seasoned doing React and java microservice development.</li>
             </ul>
           </div>
         </div>
         <div class="col s12 m4">
-          <p class="header">Collaborative & Adaptable</p>
+          <p class="header">Collaborative and Adaptable</p>
           <div class="icon-block">
             <ul class="list-creds">
-              <li>Great at conflict resolution. </li>
-              <li>Always reading (& writing) documentation.</li>
-              <li>Adaptable to changing startup objectives & team needs.</li>
-              <li>Skilled in working with remote coworkers to debug issues & complete tickets.</li>
+              <li>Great at conflict resolution and working with clients. </li>
+              <li>Always reading (and writing) documentation.</li>
+              <li>Adaptable to changing startup objectives and team needs.</li>
+              <li>Skilled in working with remote coworkers to debug issues and complete tickets.</li>
             </ul>
           </div>
         </div>
@@ -80,7 +91,7 @@
           <p class="header">Tools for Success</p>
           <div class="icon-block">
             <ul class="list-creds">
-              <li>Agile development. Responsive-first design.</li>
+              <li>Agile development. Mobile-first design.</li>
               <li>Project management with Trello, Asana, Jira, or whatever you use.</li>
               <li>Testing with TravisCI.</li>
               <li>Code reviews, pair programming, regular feedback loops with managers to constantly improve.</li>
@@ -91,7 +102,7 @@
       </div>
     </div>
       <div class="section">
-        <p class="header" id="my-work">Projects</p>
+        <h3 id="my-work">Side Projects</h3>
         <div class="row">
           <div class="col s4"><a href="#">Habit Hero</a></div>
           <div class="col s4"><a href="https://learn-punjabi.herokuapp.com/">Learn Punjabi</a></div>
@@ -101,43 +112,19 @@
         <h4>Excited to create something great? Me too! <br>Let's work together.</h4>
         <p class="header" >Contact me</p>
         <div class="row">
-          <div class="col s6"><a href="https://www.linkedin.com/in/snopeks/"> LinkedIn</a></div>
-          <div class="col s6"><a href="https://github.com/snopeks">Github</a></div>
+          <div class="col s4"><a href="https://www.linkedin.com/in/snopeks/"> LinkedIn</a></div>
+          <div class="col s4"><a href="https://github.com/snopeks">Github</a></div>
+          <div class="col s4">creativesnopeks at gmail dot com</div>
         </div>
       </div>
-    </div>
-    <div class="section">
-        <div class="row">
-        </div>
     </div>
   </div>
 <footer class="page-footer grey darken-1">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Get in touch</h5>
-        <ul>
-          <li>Let's connect!</li>
-          <li>email: creativesnopeks at gmail dot com</li>
-        </ul>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Social profiles</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="https://github.com/snopeks">Github</a></li>
-          <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/snopeks/">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
   <div class="footer-copyright">
     <div class="container">
     © 2019 Stephanie Snopek
     </div>
   </div>
   </footer>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script type="text/javascript" src="assets/js/init.js"></script>
 </body>
 </html>

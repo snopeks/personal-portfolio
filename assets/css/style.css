@@ -16,13 +16,44 @@ nav ul a,
 nav .brand-logo {
   color: white;
 }
+.logo {
+  position: absolute; 
+  padding: 0; 
+  display: inline-block;
+  font-size: 30px;
+}
+.banner {
+  max-height: 400px; 
+}
+
+.section a:hover {
+  color: darkblue; 
+}
+
 .intro-section {
+  height: 400px; 
   padding-top: 0; 
-  position: relative; 
+  position: relative;
+  
+}
+.personal {
+  line-height: 200px; 
+}
+#profile-pic {
+  height: 200px; 
+  width: auto; 
+  border-radius: 50%; 
+  vertical-align: middle; 
 }
 #sf-background {
-  opacity: 0.5;
-  width: 100%;
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  background-image: url(../imgs/goldengatepark.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  z-index: -1; 
+  opacity: 0.4; 
 }
 #intro-overlay {
   position: absolute;
@@ -52,9 +83,10 @@ p {
 }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  .logo {
+    font-size: 35px; 
+    left: 30%; 
+    
   }
   #index-banner .section {
     top: 10%;
@@ -64,6 +96,17 @@ p {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .logo {
+    font-size: 25px; 
+    left: 30%; 
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .logo {
+    font-size: 21px; 
+    left: 25%; 
   }
 }
 
